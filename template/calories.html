@@ -1,0 +1,30 @@
+div>Calories Calculator</div>
+<!-- post to shorten the URL, getting our data from load_job_from_db in database.py -->
+<form action="/calories" method="POST">
+    
+    <div class="mb-2">
+        <label>Full Name</label> <br>
+        <input type="text" name="full_name" placeholder="Bobby Kataria">
+    </div>
+    <div class="mb-2">
+        <label>Age</label> <br>
+        <input type="text" name="Age" placeholder="15">
+    </div>
+    <div class="mb-2">
+        <label>Height (in metres)</label> <br>
+        <input type="text" name="height" placeholder="60">
+    </div>
+
+    <div class="mb-2">
+        <label>Weight(in kgs)</label> <br>
+        <input type="text" name="weight" placeholder="60">
+    </div>
+
+    <div class="mb-2">
+        <label>Calories to be reduced</label> <br>
+        <input type="text" name="Calories" placeholder="100">
+    </div>
+
+   
+    <input type="submit" name="Submit">
+</form>

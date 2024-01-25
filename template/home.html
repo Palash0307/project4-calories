@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        
+        {% include 'bootstrap.html' %}
+        
+    </head>
+    <body>
+        <!--adding header html file-->
+        {% include 'nav.html' %}
+        {% include 'banner.html' %}
+
+        <!--to center the context-->
+        <div class="container">
+         <!--giving margin at top and bottom mt and mb-->
+            <h1 class="text-center mt-4 mb-2">
+                <!--adding tags-->
+                 Health Guider
+            </h1>
+        
+            <h2 class="text-center mt-4 mb-2"> About us </h2>
+            <div class="row" style="margin-bottom: 16px;">
+                <div class="col--6">
+                <p class="lead">
+                Check your daily steps
+            </p>
+            </div>
+            <!--only to be displayed in bigger-->
+            <div class="d-none d-md-block col-6">
+                <img src="/static/banner.jpeg" style="height: 320px; border-radius: 4px;">
+                 </div>
+            </div>
+            <h2 class="text-center mt-4 mb-2" > Enter your Details </h2>
+            <div> 
+                <!--loop of jobs, extracted from job_item.html,jobs is the object named in our app function-->
+                
+                {% include 'check.html' %}
+                
+            </div>
+            <!--adding the button-->
+            <div class="text-center">
+                <a href="mailto:palashaggarwal@gmail.com?subject=Question&body=Please%20ask%20your%20doubts%20here%3A" type="button" class="btn btn-primary btn-lg"> Contact Us</a>
+        
+        </div>
+    </div>
+    {% include 'footer.html' %}
+    </body>
+</html>

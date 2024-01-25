@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      {% include 'bootstrap.html' %}
+
+    </head>
+    <body>
+        <!--header format-->
+        {% include 'nav.html' %}
+        {% include 'banner.html' %}
+        <!--container is used to center the inputs-->
+        <div class="container">
+            <!--giving margin at top and bottom mt and mb-->
+               <h1 class="text-center mt-4 mb-2">
+                   <!--adding tags-->
+                    Health Guider
+               </h1>
+ <!--as our values are stored in the form of integers in database, job is the object named in our app function show_job in render template-->      
+               
+                {% include 'calories.html' %}
+    </div>
+        
+        {% include 'footer.html' %}
+
+    </body>
+</html>

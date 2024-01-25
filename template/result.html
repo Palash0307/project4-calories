@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include 'bootstrap.html' %}
+    <title>Application Submitted</title>
+</head>
+
+<body>
+    {% include 'nav.html' %}
+    {% include 'banner.html' %}
+    <div class="container">
+        <h1 class="text-center mt-4 mb-2">
+            Health Guider
+        </h1>
+        <h2>Here are the results!!</h2>
+        <b>Full name</b>
+        <div class="mb-2">{{ result['full_name'] }}</div>
+        <b>Age</b>
+        <div>{{ result['age'] }}</div>
+        <b>Weight</b>
+        <div>{{ result['weight'] }}</div>
+        <b>Calories</b>
+        <div>{{ result['calories'] }}</div>
+        <b>Steps to be taken</b>
+        <div>{{ result['steps_to_be_taken'] }}</div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+
+</html>
